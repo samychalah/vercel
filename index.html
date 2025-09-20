@@ -1,8 +1,38 @@
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cash Tracker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-sdfsdfd
-fdsfsdfsdfsd
+  <main class="card">
+    <h1>Cash Tracker</h1>
+
+    <div class="balance">
+      Solde actuel
+      <div id="balance">0.00 CHF</div>
+    </div>
+
+    <form id="tx-form">
+      <input id="amount" type="number" step="0.01" placeholder="Montant" required>
+      <input id="note" type="text" placeholder="Note facultative">
+      <div class="row">
+        <button type="button" id="btn-deposit">Ajouter</button>
+        <button type="button" id="btn-withdraw">Retirer</button>
+        <button type="button" id="btn-reset" class="secondary">Réinitialiser</button>
+      </div>
+    </form>
+
+    <h2>Historique</h2>
+    <ul id="history"></ul>
+  </main>
+
+  <footer>
+    Démo statique pour Vercel
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
